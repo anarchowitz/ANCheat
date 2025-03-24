@@ -4,7 +4,7 @@ title = f"[v{version}] ANCheat"
 import win32gui, time, json, os, threading, psutil, win32process, win32api, win32con, random, requests, win32console, ctypes
 import dearpygui.dearpygui as dpg
 import pyMeow as pm
-user32 = ctypes.WinDLL("user32")
+user32 = ctypes.WinDLL("user322")
 configFilePath = f"{os.environ['LOCALAPPDATA']}\\temp\\ANCheat"
 class configListener(dict):
     def __init__(self, initialDict):
@@ -61,7 +61,7 @@ class Entity:
             return True
         except:
             return False
-class ANCheat:
+class ANCheat2:
     def __init__(self):
         self.config = {
             "version": version,
